@@ -1,8 +1,61 @@
-# pandas-challenge
-# Written Report
+# Pandas Challenge
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-In this challenge we used 2 datasets. One dataset was a schools dataset that included the school ID, name of a school, the type of school (district or charter), the size (total students), and the budget. The other dataset wass a students dataset that included the Student ID, student name, gender, grade, school name, reading score, and math score. I then merged these two schools on the name of the school so that it was all in one dataset called school_data_complete. From that merged data frame I was able to find the Number of unique schools, Total students per school, Total budget, Average math score, average reading score, percent of students passing math, percent of students passing reading, and overall percent passing (students passing both courses). I then printed this summary as a data frame for the district summary. Next, I used the merged and singular datasets to find the Unique school names, school types, total students per school, total school budget, per student budget, average math and reading score per school, percent passing math and reading per school, and overall passing per school. I then printed this information in a data frame called school_summary. From the school_summary dataframe, I was able to find the highest and lowest performing schools by percent overall passing and print the top 5 for each. Next, I found the math and reading scores by grade for each school and display the results of those in a data frame. Lastly, I was able to show the scores of each school based on the school spending in different categories (<$585, $585-630, $630-645, $645-680), school size (small <1000, medium (1000-2000), large (2000-5000)), and by school type (district vs charter). 
+## 📌 Project Overview
+This project is a **data analysis challenge** using **Pandas**, where we explore, clean, and derive insights from structured datasets. The challenge emphasizes **data wrangling, statistical calculations, and visualization** to uncover patterns and trends.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-From these findings I made a conclusion that the charter schools performed much better than the district schools. The average scores of math and reading were higher and a higher percentage of students were passing compared to the district schools. Also, the top 5 schools based on percent overall passing were charter schools. Meanwhile, the bottom 5 performing schools were district schools. I am not surprised by this and feel that this is the case because charter may implement different teaching techniques to help cater to their specific students to get the best results while meeting the state requirements in cirriculum. They are much more cost-effective compared to district schools. I also found that the larger schools performed worse than the medium and smaller schools. I am not surprised by this because the larger schools has so many more students than the other schools that it would have a bigger sway on the classes averages. It is harder for bigger schools to have a high percent of the students pass just because of the size being a lot bigger than the other schools. 
+## 📊 Technologies Used
+- **Python** 🐍
+- **Pandas** 📊
+- **Jupyter Notebook** 📓
+- **Matplotlib & Seaborn** 🎨 (if visualization is included)
+
+## 📂 Repository Structure
+```
+📦 pandas-challenge
+ ┣ 📂 data                 # Dataset(s) used in the analysis
+ ┣ 📂 notebooks            # Jupyter Notebooks with analysis
+ ┣ 📜 README.md            # Project documentation
+ ┗ 📜 requirements.txt     # Dependencies
+```
+
+## 🚀 Getting Started
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/BrendanD2/pandas-challenge.git
+cd pandas-challenge
+```
+### 2️⃣ Install Dependencies
+Ensure you have Python installed, then run:
+```bash
+pip install -r requirements.txt
+```
+### 3️⃣ Run the Analysis
+Open Jupyter Notebook and execute the analysis:
+```bash
+jupyter notebook
+```
+
+## 📈 Key Features & Insights
+✔ **Data Cleaning & Preprocessing** – Handling missing values, transforming data types, and preparing datasets for analysis.  
+✔ **Exploratory Data Analysis (EDA)** – Identifying trends, distributions, and key metrics using Pandas.  
+✔ **Statistical Insights** – Calculating summary statistics, aggregations, and key performance indicators (KPIs).  
+✔ **Data Visualization** *(if applicable)* – Generating meaningful plots using Matplotlib/Seaborn for better interpretation.  
+
+## 📌 Example Code Snippet
+```python
+import pandas as pd
+# Load dataset
+df = pd.read_csv('data/sample.csv')
+# Display summary statistics
+print(df.describe())
+```
+
+## 📜 License
+This project is licensed under the **MIT License** – feel free to use, modify, and distribute.
+
+## 🤝 Contributing
+Contributions are welcome! If you'd like to improve or extend this project, please fork the repository and submit a pull request.
+
+## 📬 Contact
+For any questions or collaborations, feel free to connect with me on **[LinkedIn](https://www.linkedin.com/in/brendan-doucette-0b33ab268/)**.
+
